@@ -1,0 +1,15 @@
+//used xor so that ans number^ number=0;
+//0^number=number
+
+public class Solution{  
+ public static int findUnique(int[] arr){
+int ans=0;
+for(int num:arr){
+  ans=ans^num;
+}
+return ans;
+}
+}
+
+
+
