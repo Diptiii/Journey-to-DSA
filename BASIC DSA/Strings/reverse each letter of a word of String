@@ -1,0 +1,24 @@
+
+import java.util.*;
+
+class Stringss {
+    public static void main(String[] args)
+    {
+        String str = "Geeks for Geeks";
+        String[] words=str.split(" ");
+        String reverseString="";
+
+        for(int i=0;i<words.length;i++){
+            String w=words[i];
+            String revWord="";
+
+            for(int j=w.length()-1;j>=0;j--){
+                revWord=revWord+w.charAt(j);
+            }
+            reverseString=reverseString+revWord+" ";
+        }
+        System.out.println(reverseString);
+    }
+
+
+    }
