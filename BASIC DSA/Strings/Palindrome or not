@@ -9,6 +9,7 @@ public class Questions {
 
 
     static boolean ispalindrome(String str) {
+str=str.toLoweCase();
         if (str == null || str.length() == 0) {
             return false;
         }
