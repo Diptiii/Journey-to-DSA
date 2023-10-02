@@ -1,0 +1,19 @@
+public class Questions {
+    public static void main(String args[]) {
+        int [] arr={3,2,5,1,6};
+        int n=5;
+        int sum=getSum(arr,n,0);
+        System.out.println(sum);
+        }
+    static int getSum(int[]arr,int n,int i) {
+        if(n==0 ){
+            return 0;
+        }
+        if(n==1){
+            return arr[i];
+        }
+        int remain=getSum(arr,n-1,i+1);
+        int sum=arr[i]+remain;
+        return sum;
+    }
+    }
